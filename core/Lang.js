@@ -3,8 +3,8 @@
  * @author Albert Diaz
  */
 
-import { readFileSync, writeFileSync } from 'fs';
-import Crypt from './Crypt';
+const { readFileSync, writeFileSync } = require('fs');
+const Crypt = require('./Crypt');
 
 class Lang {
 	constructor() {
@@ -77,4 +77,4 @@ class Lang {
 	}
 }
 
-export default Lang;
+module.exports = Lang;

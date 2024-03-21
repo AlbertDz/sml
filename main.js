@@ -3,8 +3,8 @@
  * @author Albert Diaz
  */
 
-import Lang from './core/Lang.js';
-import dotenv from 'dotenv';
+const Lang = require('./core/Lang.js');
+const dotenv = require('dotenv');
 dotenv.config();
 
 const text = ({ property, lang: langValue }) => {
@@ -27,8 +27,8 @@ const createMinifyFromJson = () => {
 	lang.createMinifyFile('json');
 };
 
-export {
+module.exports = {
 	text,
 	createMinifyFromCsv,
 	createMinifyFromJson
-}
+};

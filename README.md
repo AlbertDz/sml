@@ -47,7 +47,7 @@ lang.json
 ### Uso
 Una vez que tienes configuradas las variables de entorno y preparado el archivo de traducción, puedes comenzar a utilizar la librería. Aquí te mostramos cómo hacerlo:
 ```javascript
-import { text, createMinifyFromCsv, createMinifyFromJson } from "@albertdz/sml";
+const { text, createMinifyFromCsv, createMinifyFromJson } = require("@albertdz/sml");
 
 const value = text({ property: 'test', lang: 'en' });
 createMinifyFromCsv(); // Crea el lang.txt a partir de un csv

@@ -23,4 +23,4 @@ class Crypt {
 	}
 }
 
-export default Crypt;
+module.exports = Crypt;

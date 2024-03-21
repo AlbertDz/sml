@@ -49,7 +49,7 @@ Una vez que tienes configuradas las variables de entorno y preparado el archivo 
 ```javascript
 const { text, createMinifyFromCsv, createMinifyFromJson } = require("@albertdz/sml");
 
-const value = text({ property: 'test', lang: 'en' });
+const value = text('test', 'en');
 createMinifyFromCsv(); // Crea el lang.txt a partir de un csv
 createMinifyFromJson(); // Crea el lang.txt a partir de un json
 ```

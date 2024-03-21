@@ -1,6 +1,6 @@
 {
   "name": "@albertdz/sml",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Effortlessly and swiftly transform web applications into a multilingual system with ease. Our solution simplifies the process, allowing for quick adaptation to diverse language preferences, ensuring broader accessibility and user engagement.",
   "main": "main.js",
   "scripts": {
@@ -35,12 +35,12 @@
     "lib": "core"
   },
   "files": [
+    "albertdz__sml/",
     "core/",
     "lang.csv",
     "lang.json",
     "lang.txt",
-    "main.js",
-    "main.d.ts"
+    "main.js"
   ],
   "dependencies": {
     "dotenv": "^16.4.5"

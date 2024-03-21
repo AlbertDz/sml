@@ -13,7 +13,7 @@ class Lang {
 		this.key = process.env.CRYPT_KEY;
 	}
 
-	getText({ property, lang }) {
+	getText(property, lang) {
 		let typeFile = this.typeFile;
 		const crypt = new Crypt();
 

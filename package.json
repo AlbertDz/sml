@@ -1,6 +1,5 @@
 {
   "name": "@albertdz/sml",
-  "type": "module",
   "version": "1.0.0",
   "description": "Effortlessly and swiftly transform web applications into a multilingual system with ease. Our solution simplifies the process, allowing for quick adaptation to diverse language preferences, ensuring broader accessibility and user engagement.",
   "main": "main.js",
@@ -9,14 +8,40 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbertDz/sml.git"
+    "url": "https://github.com/AlbertDz/sml.git"
   },
+  "keywords": [
+    "multilingual",
+    "i18n",
+    "internationalization",
+    "localization",
+    "language",
+    "translation"
+  ],
   "author": "Albert Diaz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlbertDz/sml/issues"
   },
   "homepage": "https://github.com/AlbertDz/sml#readme",
+  "engines": {
+    "node": ">=12"
+  },
+  "exports": {
+    ".": "./main.js"
+  },
+  "types": "./main.d.ts",
+  "directories": {
+    "lib": "core"
+  },
+  "files": [
+    "core/",
+    "lang.csv",
+    "lang.json",
+    "lang.txt",
+    "main.js",
+    "main.d.ts"
+  ],
   "dependencies": {
     "dotenv": "^16.4.5"
   },

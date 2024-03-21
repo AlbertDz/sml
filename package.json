@@ -1,0 +1,27 @@
+{
+  "name": "@albertdz/sml",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Effortlessly and swiftly transform web applications into a multilingual system with ease. Our solution simplifies the process, allowing for quick adaptation to diverse language preferences, ensuring broader accessibility and user engagement.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertDz/sml.git"
+  },
+  "author": "Albert Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlbertDz/sml/issues"
+  },
+  "homepage": "https://github.com/AlbertDz/sml#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.3",
+    "jest": "^29.7.0"
+  }
+}

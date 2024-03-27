@@ -29,7 +29,7 @@ class Lang {
 		return value;
 	}
 
-	createMinifyFile(typeFile) {
+	createCryptFile(typeFile) {
 		const file = readFileSync(`${this.pathFile}/lang.${typeFile}`, 'utf8');
 		const data = (typeFile === 'csv')
 			? this.#_dataCsv(file)

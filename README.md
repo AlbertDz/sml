@@ -47,11 +47,26 @@ lang.json
 ### Uso
 Una vez que tienes configuradas las variables de entorno y preparado el archivo de traducción, puedes comenzar a utilizar la librería. Aquí te mostramos cómo hacerlo:
 ```javascript
-const { text, createMinifyFromCsv, createMinifyFromJson } = require("@albertdz/sml");
+const { text, createCryptFromCsv, createCryptFromJson } = require("@albertdz/sml");
 
 const value = text('test', 'en');
-createMinifyFromCsv(); // Crea el lang.txt a partir de un csv
-createMinifyFromJson(); // Crea el lang.txt a partir de un json
+createCryptFromCsv(); // Crea el lang.txt a partir de un csv
+createCryptFromJson(); // Crea el lang.txt a partir de un json
 ```
 Recuerda que el archivo `lang.txt` se crea de forma interna, por lo que se recomienda trabajar con él en producción. En el caso de desarrollo, puedes utilizar el archivo `lang.csv` o `lang.json`.
 
+### Soporte TS
+```text
+/
+└── @types/
+    └──albertdz__sml/
+        └── index.d.ts
+```
+
+```typescript
+declare module '@albertdz/sml' {
+  export function text(property: string, lang: string): string;
+  export function createCryptFromCsv(): void;
+  export function createCryptFromJson(): void;
+}
+```

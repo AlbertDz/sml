@@ -3,14 +3,14 @@
  * @author Albert Diaz
  */
 
-import { createMinifyFromCsv, createMinifyFromJson } from '../main.js';
+import { createCryptFromCsv, createCryptFromJson } from '../main.js';
 
 describe('Minify', () => {
 	it('should create a minify file from a csv', () => {
-		createMinifyFromCsv();
+		createCryptFromCsv();
 	});
 
 	it('should create a minify file from a json', () => {
-		createMinifyFromJson();
+		createCryptFromJson();
 	});
 });

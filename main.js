@@ -17,18 +17,18 @@ const text = (property, langValue) => {
 	return text;
 };
 
-const createMinifyFromCsv = () => {
+const createCryptFromCsv = () => {
 	const lang = new Lang();
-	lang.createMinifyFile('csv');
+	lang.createCryptFile('csv');
 };
 
-const createMinifyFromJson = () => {
+const createCryptFromJson = () => {
 	const lang = new Lang();
-	lang.createMinifyFile('json');
+	lang.createCryptFile('json');
 };
 
 module.exports = {
 	text,
-	createMinifyFromCsv,
-	createMinifyFromJson
+	createCryptFromCsv,
+	createCryptFromJson
 };

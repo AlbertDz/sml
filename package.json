@@ -1,6 +1,6 @@
 {
   "name": "@albertdz/sml",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Effortlessly and swiftly transform web applications into a multilingual system with ease. Our solution simplifies the process, allowing for quick adaptation to diverse language preferences, ensuring broader accessibility and user engagement.",
   "main": "main.js",
   "scripts": {

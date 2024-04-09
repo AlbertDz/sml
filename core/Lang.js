@@ -13,20 +13,15 @@ class Lang {
 		this.key = process.env.CRYPT_KEY;
 	}
 
-	async getText(property, lang) {
+	getText(property, lang) {
 		let typeFile = this.typeFile;
 		const crypt = new Crypt();
 
-		let fileData;
-    if (typeFile === 'txt') {
-			const response = await fetch(`${this.pathFile}/lang.${typeFile}`);
-			const text = await response.text();
-			fileData = crypt.decrypt(text, this.key);
+		let file = readFileSync(`${this.pathFile}/lang.${typeFile}`, 'utf8');
+		if (typeFile === 'txt') {
+			file = crypt.decrypt(file, this.key);
 			typeFile = 'json';
-    } else {
-			const response = await fetch(`${this.pathFile}/lang.${typeFile}`);
-			fileData = await response.json();
-    }
+		}
 
 		const dataLang = this.#_getDataLang(typeFile, file, lang);
 		const value = dataLang ? (dataLang[property] ?? property) : property;
